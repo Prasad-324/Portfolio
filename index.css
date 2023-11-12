@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+body{
+    background:#1f242d;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+
+.navbar a:hover{
+    color: #0ef;
+    transform: scale(1.1);
+    
+}
+
+.home{
+    transition: 0.3s;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-img img {
+    border-radius: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
+    max-width: 100%; /* Ensures the image doesn't exceed its container width */
+    height: auto; /* Allows the image to maintain its aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect on hover */
+    border: 2px solid #1f242d; /* Border color set to a blue shade */
+
+}
+
+.home-img img:hover {
+    transform: scale(1.1); /* Increases the size of the image on hover */
+    border-color: #3498db; /* Border color changes on hover to a red shade */
+    box-shadow: 0 0 20px #0ef;
+
+}
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content span{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p{
+    font-size: 25px;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.social-media a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.resume-btn{
+    display: inline-flex;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resume-btn:hover{
+    box-shadow: 0 0 20px #0ef;
+}

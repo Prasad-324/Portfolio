@@ -31,6 +31,21 @@ body{
     font-weight: 600;
     cursor: default;
     transition: 0.3s;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100;
+    }
+    
 }
 
 .logo:hover{
@@ -46,6 +61,19 @@ body{
     margin-left: 35px;
     display: inline-block;
     transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100;
+    }
 }
 
 
@@ -71,17 +99,26 @@ body{
 
 .home-img img {
     border-radius: 40%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
-    max-width: 100%; /* Ensures the image doesn't exceed its container width */
-    height: auto; /* Allows the image to maintain its aspect ratio */
-    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect on hover */
-    border: 2px solid #1f242d; /* Border color set to a blue shade */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease-in-out; 
+    border: 2px solid #1f242d; 
+    animation: slideImage 1s ease forwards;
+}
 
+@keyframes slideImage {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .home-img img:hover {
-    transform: scale(1.1); /* Increases the size of the image on hover */
-    border-color: #3498db; /* Border color changes on hover to a red shade */
+    transform: scale(1.1); 
+    border-color: #3498db; 
     box-shadow: 0 0 20px #0ef;
 
 }
@@ -94,14 +131,16 @@ body{
     font-weight: 700;
 }
 
-.home-content span{
-    font-size: 56px;
-    font-weight: 700;
-    margin: -3px 0;
+.home-content h3 span{
+    color: #0ef;
 }
 
 .home-content p{
     font-size: 25px;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
 }
 
 .social-media a{

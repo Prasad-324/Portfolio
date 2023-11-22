@@ -226,3 +226,163 @@ body{
 .text{
     color: #0ef;
 }
+
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    color: aliceblue;
+}
+
+.sub-title span{
+    color: #0ef;
+}
+
+.container{
+    padding: 90px;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.services-list div:hover{
+    box-shadow: 0 0 100px #0ef;
+    transform: scale(1.05); /* Increase size on hover */
+
+}
+
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border-right: 10px;
+    opacity: 1;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    border-color: #3498db; 
+    box-shadow: 0 0 20px #0ef;
+    box-shadow: 1px 1px 20px #0ef,
+                1px 1px 40px #0ef;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 1;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+                0 0 25px #0ef;
+}
+
+.read:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+
+.skills{
+    height: 800px;
+    display: block;
+}
+
+.skills-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-skills-block {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out; 
+    border: 2px solid #1f242d; 
+    animation: slideRight 1s ease forwards;
+}
+
+.skills-title span{
+    color: #0ef;
+}
+
+.technical {
+    flex: 1; 
+  margin: 0 10px; 
+  /* border: 1px solid #000;  */
+  height:max-content;
+}
+  
+.heading{
+    text-decoration: underline;
+    color: aliceblue;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Technical-bars{
+    margin-bottom: 20px;
+}
+
+.info{
+    border-radius: 15px 50px 30px;;
+    border: 2px solid #0ef;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.info:hover{
+    /* background: #0ef; */
+    transform: scale(1.05); 
+    color: #081b29;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+
+.info span{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.info i{
+    font-size: 30px;
+}

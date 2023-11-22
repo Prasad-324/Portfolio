@@ -5,3 +5,4 @@ var typed = new Typed(".work", {
   backDelay: 1000,
   loop: true,
 });
+

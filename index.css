@@ -355,7 +355,6 @@ body{
 }
 
 .main-skills-block{
-    border: 1px solid #000; 
     margin: 10px 300px; 
     height: 80%;
 
@@ -372,7 +371,7 @@ body{
     background-color: #212533;  
 }
 
-.grid-item {
+.grid-item1 {
     background-color: #2f405d; 
     width: 100%; 
     height: 100%;
@@ -384,21 +383,63 @@ body{
     text-align: center;
 }
 
-.grid-item:hover{
+.grid-item1:hover{
     transform: scale(1.1);
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
 
 }
 
-.grid-item img {
+.grid-item1 img {
+    margin-bottom: 10px; 
+    transition: 0.3s;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.grid-item1 span{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.3s;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.grid-item1{
+    animation: slideRight 1s ease forwards;
+
+}
+
+.grid-item2 {
+    background-color: #2f405d; 
+    width: 100%; 
+    height: 100%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-item2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+
+}
+
+.grid-item2 img {
     margin-bottom: 10px; 
     transition: 0.3s;
     opacity: 1;
-    animation: slideRight 1s ease forwards;
+    animation: slideLeft 1s ease forwards;
+
 }
 
-.grid-item span{
+.grid-item2 span{
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 600;
@@ -406,8 +447,12 @@ body{
     transition: 0.3s;
     opacity: 1;
     animation: slideLeft 1s ease forwards;
+
 }
 
+.grid-item2{
+    animation: slideLeft 1s ease forwards;
+}
 
 
 
